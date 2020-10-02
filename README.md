@@ -11,7 +11,8 @@ In this first assignment, the goal was to define a data structure(Database) that
 * id_parent: represents the identifier of node's parent. 
 * list_name: is a list of object names assigned to this label / identifier.
 
-which leads to this structure: {id_node: (id_parent,list_name) , id_node: (id_parent,list_name) ...}
+which leads to this structure: 
+	` {id_node: (id_parent,list_name) , id_node: (id_parent,list_name) ...} `
 
 
 
@@ -22,7 +23,7 @@ which leads to this structure: {id_node: (id_parent,list_name) , id_node: (id_pa
 ### Tomato detection using a pre-trained model
 In this second assignment, the goal is to detect tomato presence using a deep learning model. For that, i had two model ideas, the first is object detection and the second is to use a deep classifier. As the task is a binary classification so the most judicious solution was to lean towards the second solution.
 More details, I used a pre-trained model which is resnet50 i also added two layers at the end  so that the classification corresponds to the binary classification task. Data are images of dishes taken by users. To train the model, just run in a terminal the following command:   
-' python main --path path --epochs nb_epoch --batch-size batch_size -- lr learning_rate --cuda '
+ ` python main --path path --epochs nb_epoch --batch-size batch_size -- lr learning_rate --cuda `
 
 with:
 * path: data/images path
