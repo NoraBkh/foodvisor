@@ -23,7 +23,7 @@ class TomatoDataset(object):
         img_path = os.path.join(self.root, "assignment_imgs", self.imgs[idx])
         label = get_label(self.imgs[idx])
         img = Image.open(img_path).convert("RGB")
-        img = img.resize((224, 224), Image.BILINEAR)
+
         
         
         if self.transform is not None:
