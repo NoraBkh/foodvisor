@@ -1,7 +1,7 @@
 # Dependencies && Install
-*Python >= 3.
+* Python >= 3.
 
-you need to install all packages in 'requirements.txt' file for the two assignment.
+you need to install all packages in 'requirements.txt' file for the two assignments.
 
 # Assignment1 - Food database
 
