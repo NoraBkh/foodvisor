@@ -35,8 +35,9 @@ def has_tomatoes(img_path):
             input = Variable(image_tensor)
             input = input.to(device)
             output = model(input)
+            soft = nn.Softmax(dim=1)
+            output = soft(output)
             index = output.data.cpu().numpy().argmax()
-            
             ## Tomato presence is coded with 1
             if index == 1:
                 return True

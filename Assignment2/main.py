@@ -126,7 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', default='/home/nora/Téléchargements/test_foodvisor/Assignment2', type=str, metavar='DIR', help='path to dataset')
     parser.add_argument('--epochs', default=200, type=int, metavar='N', help='number of total epochs to run')
-    parser.add_argument('--batch-size', default=50, type=int, metavar='N', help='mini-batch size (default: 128)')
+    parser.add_argument('--batch-size', default=100, type=int, metavar='N', help='mini-batch size (default: 128)')
     parser.add_argument('--lr', default=0.1, type=float, metavar='LR', help='learning rate')
     parser.add_argument('--cuda', dest='cuda', action='store_true', help='activate GPU acceleration')
 
